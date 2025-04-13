@@ -593,26 +593,26 @@
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             
-            <form id="contactForm">
+            <form id="contactForm" action="contact.php" method="post" name="formcontact" >
               <div class="row">
                 <div class="col-md-6 mb-3">
                   <label for="name" class="form-label">Your Name</label>
-                  <input type="text" class="form-control" id="name" required>
+                  <input type="text" class="form-control" name="name" id="name" required>
                 </div>
                 <div class="col-md-6 mb-3">
                   <label for="email" class="form-label">Your Email</label>
-                  <input type="email" class="form-control" id="email" required>
+                  <input type="email" class="form-control" name="email" id="email" required>
                 </div>
               </div>
               <div class="mb-3">
                 <label for="subject" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="subject" required>
+                <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="5" required></textarea>
+                <textarea class="form-control"  id="message" name="message" rows="5" required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary w-100">
+              <button type="submit" name="submit" id="submit" class="btn btn-primary w-100">
                 <i class="fas fa-paper-plane me-2"></i> Send Message
               </button>
             </form>
